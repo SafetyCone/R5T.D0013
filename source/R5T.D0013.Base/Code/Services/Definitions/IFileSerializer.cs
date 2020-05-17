@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 
 
-namespace R5T.D0013.Base
+namespace R5T.D0013
 {
     /// <summary>
     /// De/serializes an object of type <typeparamref name="T"/> to a file.
