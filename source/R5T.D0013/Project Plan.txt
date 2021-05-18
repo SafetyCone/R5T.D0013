@@ -1,4 +1,0 @@
-R5T.D0013 - An IFileSerializer<T> library (async, stringly-typed paths).
-
-Goals
-

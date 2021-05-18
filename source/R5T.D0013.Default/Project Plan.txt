@@ -1,0 +1,4 @@
+R5T.D0013.Default - Default implementations library for the IFileSerializer<T> (async, stringly-typed paths) service.
+
+Goals
+

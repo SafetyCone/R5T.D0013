@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 
+using R5T.Magyar.IO;
+
 
 namespace R5T.D0013
 {
@@ -19,12 +21,12 @@ namespace R5T.D0013
         /// Deserializes an object from a file.
         /// </summary>
         /// <param name="filePath">The rooted file path to use.</param>
-        Task<T> DeserializeAsync(string filePath);
+        Task<T> Deserialize(string filePath);
 
         /// <summary>
         /// Serializes an object to a file.
         /// </summary>
         /// <param name="filePath">The rooted file path to use.</param>
-        Task SerializeAsync(string filePath, T value, bool overwrite = true);
+        Task Serialize(string filePath, T value, bool overwrite = IOHelper.DefaultOverwriteValue);
     }
 }
