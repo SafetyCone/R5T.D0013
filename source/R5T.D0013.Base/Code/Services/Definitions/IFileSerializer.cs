@@ -1,7 +1,8 @@
 ﻿using System;
+using System.IO;
 using System.Threading.Tasks;
 
-using R5T.Magyar.IO;
+using R5T.T0064;
 
 
 namespace R5T.D0013
@@ -15,7 +16,8 @@ namespace R5T.D0013
     /// * Upon reading, you can assume the file exists, and it doesn't throw an exception.
     /// * Upon writing, note that the optional overwrite argument default value is true.
     /// </remarks>
-    public interface IFileSerializer<T>
+    [ServiceDefinitionMarker]
+    public interface IFileSerializer<T> : IServiceDefinition
     {
         /// <summary>
         /// Deserializes an object from a file.

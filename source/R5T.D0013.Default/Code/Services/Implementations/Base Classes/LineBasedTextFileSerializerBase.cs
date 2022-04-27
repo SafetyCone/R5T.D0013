@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 
-using R5T.Magyar.IO;
+using R5T.T0064;
 
 
 namespace R5T.D0013
 {
     // Async, high memory usage since there is no such thing 
-    public abstract class LineBasedTextFileSerializerBase<T> : IFileSerializer<T>
+    [ServiceImplementationMarker]
+    public abstract class LineBasedTextFileSerializerBase<T> : IFileSerializer<T>, IServiceImplementation
     {
         protected abstract Task<T> BuildFromLines(string[] lines);
 
